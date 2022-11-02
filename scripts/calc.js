@@ -1,3 +1,5 @@
-// function Addition(){
-//     return 42
-// }
+function addition(){
+    return 42
+}
+
+module.exports = addition
