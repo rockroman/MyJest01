@@ -8,6 +8,16 @@ describe("Calculator",() => {
         test("should return 17 for 12 + 5", () =>{
             expect(addition(12, 5)).toBe(17);
         })
+        test("should throw Error for string + number", () =>{
+            expect(()=>{
+                addition("moj",5);
+            }).toThrow();
+        })
+        test("should throw Error for number + string", () =>{
+            expect(()=>{
+                addition(5,"moj");
+            }).toThrow();
+        })
 
 
     });
