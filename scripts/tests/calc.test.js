@@ -18,6 +18,11 @@ describe("Calculator",() => {
                 addition(5,"moj");
             }).toThrow();
         })
+        test("should throw Error if there is no parameters given", () =>{
+            expect(()=>{
+                addition();
+            }).toThrow();
+        })
 
 
     });
